@@ -1,4 +1,34 @@
 //products in Beauty Store
+
+/*
+//use the Faker.js package to generate a larger number of products
+var faker = require("faker");
+var data = [];
+var categories = ["Skincare", "Makeup", "Hair", "Fragrance", "Bath & Body", "Tools"];
+var size = ["5.1 oz/ 150 mL", "0.5 oz/ 14 g", "1 oz/ 30 mL", "5 oz/ 125 ml", "0.019 oz/ 0.55 mL","8.5 oz/ 250 mL","1.70 oz/ 50 mL"];
+seed(123);
+
+for (let i = 1; i <= 300; i++) {
+    var category = helpers.randomize(categories);
+    data.push({
+        id: i,
+        name: commerce.productName(),
+        category: category,
+        size: size,
+        description: `${category}: ${lorem.sentence(3)}`,
+        price: Number(commerce.price())
+    })
+}
+
+module.exports = function () {
+    return {
+        categories: categories,
+        products: data,
+        orders: []
+        }
+}
+*/
+
 module.exports = function () {
     return {
         categories: ["Skincare", "Makeup", "Hair", "Fragrance", "Bath & Body", "Tools"],
@@ -60,15 +90,15 @@ module.exports = function () {
                 description: "A soft-as-sand body scrub that gently exfoliates and moisturizes.", price: 32.00 },
             { id: 25, name: "Lavender Deodorant", category: "Bath & Body", size: "2.4 oz/ 70 mL",
                 description: "A deodorant to soothe underarms and aid in odor reduction.", price: 15.00 },
-            { id: 26, name: "Hair Dryer", category: "Tools", size:" ",
+            { id: 26, name: "Hair Dryer", category: "Tools", size:"",
                 description: "A  hair dryer that saves energy while minimizing thermal exposure for beautifully styled, healthy-looking hair.", price: 175.00 },
-            { id: 27, name: "Curling Iron", category: "Tools", size:" ",
+            { id: 27, name: "Curling Iron", category: "Tools", size:"",
                 description: "A curling iron for shiny, long-lasting curls in just one pass.", price: 125.00 },
-            { id: 28, name: "Makeup Brush Set", category: "Tools", size:" ",
+            { id: 28, name: "Makeup Brush Set", category: "Tools", size:"",
                 description: "A set of 10 brushes curated to include all the essentials to create a complete makeup look.", price: 75.00 },
-            { id: 29, name: "Hair Removal", category: "Tools", size:" ",
+            { id: 29, name: "Hair Removal", category: "Tools", size:"",
                 description: "A set of three disposable premium razors with high-quality blades that seamlessly remove body hair.", price: 27.00 },
-            { id: 30, name: "Travel Cases", category: "Tools", size:" ",
+            { id: 30, name: "Travel Cases", category: "Tools", size:"",
                 description: "A four-piece collection of hair essentials in a travel-friendly set.", price: 36.50 }
         ],
         orders: []

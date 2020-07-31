@@ -1,7 +1,11 @@
+
+//no need since we are receiving data from the web service
 export const data = {
     categories: ["Skincare", "Makeup", "Hair", "Fragrance", "Bath & Body", "Tools"],
     products: [
         //id, name, category, size, description, price
+        { id: 0, name: "Sample product", category: "Sample category", size: "Sample size",
+            description: "This is a sample description.", price: 0.00 },
         { id: 1, name: "Lemon Moisturizer", category: "Skincare", size: "100ml",
             description: "A protein moisturizer to improve the look of skin’s tone, texture, and firmness.", price: 75.00 },
         { id: 2, name: "Lemon Cleanser", category: "Skincare", size: "5.1 oz/ 150 mL",
