@@ -9,13 +9,13 @@ export class ProductList extends Component {
         }
 
         return this.props.products.map(p =>
-                <div className="card m-2 p-1 bg-light" key={ p.id }>
-                    <h4>
+                <div className="card m-4 p-1 bg-light" key={ p.id }>
+                    <h3 className="m-3">
                         { p.name }
 
-                    </h4>
-                    <h5 className="m-2">
-                        <span className="badge badge-info">
+                    </h3>
+                    <h5 className="m-3">
+                        <span className="badge badge-info ml-1">
                             {p.size}
                         </span>
 
@@ -24,8 +24,8 @@ export class ProductList extends Component {
                         </span>
                     </h5>
                     <div className="card-text bg-white p-2">
-                        <h6>{ p.description }</h6>
-                        <button className="btn btn-success btn-sm float-right"
+                        <h6 className="m-2">{ p.description }</h6>
+                        <button className="btn btn-success btn-sm float-right m-2"
                                 onClick={ () => this.props.addToCart(p) } >
                                  Add To Cart
                         </button>
